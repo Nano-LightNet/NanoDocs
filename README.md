@@ -38,6 +38,7 @@
 # What happens when a node recieves a Confirmation Acknowledgment / Vote
 #### Block Count = (extensions & 0xf000) >> 12
 #### The Node verifies the signature with the Public Key sent in the Vote.
+#### If this is response to the fisrt Confirmation Request the Connection is assocaited with the Representative
 #### The node loops through the block list
 #### If Block does not have an active Election the node checks if Representative has over 0.1% of trended weight (Princple Representative Threshold). If it does its handed over to Inactive Vote Proccesor
 #### If it does have an active election its handed to Active Vote Proccesor
