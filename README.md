@@ -3,7 +3,7 @@
 
 # Connection Process
 ## Connecting
-#### Server Entry = TCP Server (port: 7075)
+#### Server Entry = TCP Server (default port: 7075)
 #### When a Node connects to a Server Entry of a Node, it sends a NodeIDHandshake (Message Type 10) [extension: 0b01] with a randomized Cookie [Client Cookie] (32 bytes).
 #### The Server Responds with NodeIDHandshake (Message Type 10) [extension: 0b11] which haas a randomzied Cookie [Server Cookie] (32 bytes), a Node ID [Server NodeID] (Public Key) and a Signature (of The [Client Cookie] signed with the Private Key of [Server NodeID]).
 #### The Client Responds with NodeIDHandshake (Message Type 10) [extension: 0b10] which contains a Node ID [Client NodeID] (Public Key) and a Signature (of the [Server Cookie] signed with the Private Key of [Client NodeID])
