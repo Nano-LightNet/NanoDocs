@@ -91,5 +91,7 @@
 |    Opened Burn Account   | Block belongs to burn account (nano_1111111111111111111111111111111111111111111111111111hifc8npp) |
 |    Balance Mismatch   | Block's Amount does not match Block Link's Amount |
 |    Representative Mismatch   | Block's Representative does not match Previous Block's Representative (epoch blocks) |
+|    Block Position   | Epoch isn't for a new account, and is not sequential (epoch blocks) |
+|    Insufficient Work   | Block's Proof of Work is invalid |
 
 #
