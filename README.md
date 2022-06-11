@@ -61,10 +61,13 @@
 #### If the online weight is equal to 67% of trended weight (Confirmation Quorum) the block is added to the Confirmation Solliciter.
 
 # Election States
-#### Passive = Default State
-#### Active = if election started for >5s ago
-#### Broadcasting = if >2 requestes has been made for election
-#### Expired = if election started for >300s ago
+
+|     State    | Condition |
+|     :--:     |                       ---                       |
+|    Passive   | Default State                                   |
+|    Active    | Election started for >5s ago                    |
+| Broadcasting | More than 2 requests has been made for election |
+|    Expired   | Election started for >300s ago                  |
 
 # Election Loop
 #### Every 0.5 seconds the Node iterates through active elections
