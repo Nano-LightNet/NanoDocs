@@ -87,5 +87,9 @@
 |    Bad Signature   | Signature isn't valid.                  |
 |    Negative Spend   | Unknown                  |
 |    Unreceivable   | Block has already been recieved, reciever isn't equal to claimer or block can only be clamed through state blocks |
+|    Fork   | Account already exists (open blocks) or Block Hash is not equal to Account's Head |
+|    Opened Burn Account   | Block belongs to burn account (nano_1111111111111111111111111111111111111111111111111111hifc8npp) |
+|    Balance Mismatch   | Block's Amount does not match Block Link's Amount |
+|    Representative Mismatch   | Block's Representative does not match Previous Block's Representative (epoch blocks) |
 
 #
