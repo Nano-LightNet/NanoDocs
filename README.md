@@ -75,4 +75,17 @@
 #### Send a Confirmation Request to top 50 Associated Representatives which hasn't voted on a succesor of root.
 #### If election is in Broadcasting state then publish the block to the top 50 Associated Representatives.
 
+# Block Proccesor Result
+
+|     Result    |                    Condition                    |
+|     :--:     |                       ---                       |
+|    Progress   | All checks was succesful                                   |
+|    Gap Previous    | Previous Block doesn't Exist.                    |
+| Gap Source | Link Block Doesn't Exist. |
+| Gap Epoch Open Pending | Unknown |
+|    Old   | Block already exists.                  |
+|    Bad Signature   | Signature isn't valid.                  |
+|    Negative Spend   | Unknown                  |
+|    Unreceivable   | Block has already been recieved, reciever isn't equal to claimer or block can only be clamed through state blocks |
+
 #
