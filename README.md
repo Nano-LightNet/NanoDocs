@@ -60,4 +60,16 @@
 #### It adds the representative to the voted list and adds Online Weight of the representative to the block entry.
 #### If the online weight is equal to 67% of trended weight (Confirmation Quorum) the block is added to the Confirmation Solliciter.
 
+# Election States
+#### Passive = Default State
+#### Active = if election started for >5s ago
+#### Broadcasting = if >2 requestes has been made for election
+#### Expired = if election started for >300s ago
+
+# Election Loop
+#### Every 0.5 seconds the Node iterates through active elections
+#### If election is passive or expired then skip
+#### Send a Confirmation Request to top 50 Associated Representatives which hasn't voted on a succesor of root.
+#### If election is in Broadcasting state then publish the block to the top 50 Associated Representatives.
+
 #
