@@ -62,7 +62,7 @@
 
 # Election States
 
-|     State    | Condition |
+|     State    |                    Condition                    |
 |     :--:     |                       ---                       |
 |    Passive   | Default State                                   |
 |    Active    | Election started for >5s ago                    |
