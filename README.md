@@ -23,6 +23,12 @@
 | KeepAlive (2) | { { IPv6 Address (16 bytes), Port (UInt16LE) } (8) } | 0
 | ConfirmReq (4) | { { Block Hash, Root } } | 24832 (0x1100)
 
+# Proccesing KeepAlive
+#### The node loops through the peer list
+#### If peer is [::]:0 (represented as [IPv6]:port) then skip and continue loop.
+#### If node already is connected or is connecting to peer then skip and continue loop.
+#### If peer isn't connected then start Connection Process for that peer
+
 # What happens when a node recieves a Confirmation Request
 #### Block Count = (extensions & 0xf000) >> 12
 #### The node loops through the block list
