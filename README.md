@@ -82,10 +82,10 @@
 |    Progress   | All checks was succesful                                   |
 |    Gap Previous    | Previous Block doesn't Exist.                    |
 | Gap Source | Link Block Doesn't Exist. |
-| Gap Epoch Open Pending | Unknown |
+| Gap Epoch Open Pending | No Pending Blocks exist for Open Epoch Block |
 |    Old   | Block already exists.                  |
 |    Bad Signature   | Signature isn't valid.                  |
-|    Negative Spend   | Unknown                  |
+|    Negative Spend   | Block Balance >= Account Balance (Send Blocks) |
 |    Unreceivable   | Block has already been recieved, reciever isn't equal to claimer or block can only be clamed through state blocks |
 |    Fork   | Account already exists (open blocks) or Block Hash is not equal to Account's Head |
 |    Opened Burn Account   | Block belongs to burn account (nano_1111111111111111111111111111111111111111111111111111hifc8npp) |
