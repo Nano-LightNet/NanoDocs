@@ -1,4 +1,35 @@
+# Network ID Table
+| Network ID |           Network           |
+| :--------: |  -------------------------  |
+|  A (0x41)  | Developer Net (Nano/Banano) |
+|  B (0x42)  | Beta Net (Nano/Banano)      |
+|  C (0x43)  | Main Net (Nano)             |
+|  X (0x58)  | Test Net (Nano)             |
+|  X (0x58)  | Main Net (Banano)           |
+|  C (0x43)  | Test Net (Banano)           |
+
+# Protocol ID Table
+| Network ID | Network |
+|   :----:   |   ---   |
+|  R (0x52)  | Nano    |
+|  B (0x42)  | Banano  |
+
+# TCP Message Format
+| Size | Offset | Parameter Name | Description |
+|   --   |    --      |  --  |  -- |
+| 1 | 0 | Protocol Identifier | Constant Variable, see Protocol ID Table |
+| 1 | 1 | Network Identifier | Constant Variable, see Network ID Table |
+| 1 | 2 | Max Protocol Version | The latest Protocol Version which node supports, usually set to current version |
+| 1 | 3 | Protocol Version | The Protocol Version which node runs |
+| 1 | 4 | Min Protocol Version | The oldest Protocol Version which node supports, usually set to current version |
+| 1 | 5 | Message Type | Identifier for identifying message type. |
+| 2 | 6 | Message Extensions | Metadata for messages. |
+
+Check [Extended Message Format](https://github.com/nanocurrency/protocol) for more details.
+
 # Nano Protocol Overview
+Documented by NSI.
+
 #### When a Node first boots up it starts calculating Representative Weights and bootstrapping process. It also reconnects with all peers it has connected to before and peering.nano.org
 
 # Connection Process
